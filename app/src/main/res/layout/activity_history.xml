@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="match_parent">
+    <include layout="@layout/titlebar_activity"></include>
+
+    <ScrollView
+        android:verticalScrollbarPosition="@null"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="16dp"
+                    android:textColor="@color/blue"
+                    android:layout_width="match_parent"
+                    android:text="Today PM2.5(mg/m³)"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300px">
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/dayline"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></com.github.mikephil.charting.charts.LineChart>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="16dp"
+                    android:textColor="@color/blue"
+                    android:layout_width="match_parent"
+                    android:text="Nearly 7 days PM2.5(mg/m³)"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300px">
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/sevenline"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="16dp"
+                    android:textColor="@color/blue"
+                    android:layout_width="match_parent"
+                    android:text="Nearly 30 days PM2.5(mg/m³)"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300px">
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/monthline"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</com.zhy.autolayout.AutoLinearLayout>

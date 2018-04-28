@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/actionbar_back"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_driver"/>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+    <ImageView
+        android:id="@+id/iv_success"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@mipmap/link_fail"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AddDeviceSuccess_Prompt_CanUse"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/color_515151"
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <EditText
+        android:id="@+id/et_device_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="70dp"
+        android:hint="@string/AddDeviceSuccess_Placeholder_Text"
+        android:singleLine="true"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/color_63BBF7"
+        android:background="@drawable/login_tv_bg"
+        android:text="@string/AddDeviceSuccess_Button_Title"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView_fail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/link_fail"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/AddDeviceFail_List_AddFail"
+                android:textColor="@color/color_333333"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/AddDeviceFail_List_CheckStep"
+                android:textColor="@color/color_515151"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginStart="33dp"
+                android:layout_marginEnd="33dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    style="@style/link_fail_left_tv"
+                    android:text="1"/>
+
+                <TextView
+                    style="@style/link_fail_right_tv"
+                    android:text="@string/AddDeviceFail_List_Networking"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    style="@style/link_fail_left_tv"
+                    android:text="2"/>
+
+                <TextView
+                    style="@style/link_fail_right_tv"
+                    android:text="@string/AddDeviceFail_List_PwdError"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    style="@style/link_fail_left_tv"
+                    android:text="3"/>
+
+                <TextView
+                    style="@style/link_fail_right_tv"
+                    android:text="@string/AddDeviceFail_List_2.4GHz"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    style="@style/link_fail_left_tv"
+                    android:text="4"/>
+
+                <TextView
+                    style="@style/link_fail_right_tv"
+                    android:text="@string/AddDeviceFail_List_MacFilter"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    style="@style/link_fail_left_tv"
+                    android:text="5"/>
+
+                <TextView
+                    style="@style/link_fail_right_tv"
+                    android:text="@string/AddDeviceFail_List_AdvancedSetting"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="33dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="25dp"
+                android:textSize="14sp"
+                android:textColor="@color/color_666666"
+                android:gravity="center"
+                android:text="@string/AddDeviceFail_List_CallUs"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/link_fail_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_63BBF7"
+                    android:text="400-888-XXXX"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_retry"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/login_tv_bg"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="@string/AddDeviceFail_List_Retry"
+                android:textColor="@color/color_63BBF7"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

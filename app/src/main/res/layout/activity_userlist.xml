@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+        <ImageView
+            android:id="@+id/backbar"
+            android:layout_width="100px"
+            android:src="@drawable/lefticon_black"
+            android:padding="30px"
+            android:layout_height="100px" />
+
+        <TextView
+            android:id="@+id/titlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Users"
+            android:textColor="@color/black"
+            android:textSize="32px" />
+        <ImageView
+            android:id="@+id/menubar"
+            android:layout_alignParentRight="true"
+            android:layout_width="100px"
+            android:padding="30px"
+            android:layout_height="100px" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</com.zhy.autolayout.AutoLinearLayout>

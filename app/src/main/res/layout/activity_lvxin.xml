@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="match_parent">
+    <include layout="@layout/titlebar_activity"></include>
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_marginTop="100dp"
+        android:layout_width="240px"
+        android:background="@drawable/lvx_3"
+        android:layout_height="370px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/timelist"
+            android:layout_centerInParent="true"
+            android:text="1889"
+            android:textSize="60dp"
+            android:textColor="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_alignBottom="@id/timelist"
+            android:text="Hours"
+            android:layout_toRightOf="@id/timelist"
+            android:textSize="16dp"
+            android:textColor="@color/c999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Remaining time"
+            android:textSize="16dp"
+            android:textColor="@color/c999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40px"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Buy Filter"
+            android:textSize="16dp"
+            android:background="@drawable/radiobutton"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="244px"
+            android:layout_height="76px" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tip"
+        android:visibility="gone"
+        android:layout_marginTop="30px"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="滤芯即将到期请尽快更换，以便保证更好体验"
+        android:textColor="@color/red"
+        />
+</com.zhy.autolayout.AutoLinearLayout>

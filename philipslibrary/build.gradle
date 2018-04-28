@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+repositories {
+    maven {
+        url "https://repo.eclipse.org/content/repositories/paho-snapshots/"
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //必须使用 网络请求
+
+
+    api  'com.lzy.net:okgo:3.0.4'
+
+//    api 'com.koushikdutta.async:androidasync:2.+'
+
+    api 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.+'
+//    compile 'org.eclipse.paho:org.eclipse.paho.android.service:1.0.2'
+}

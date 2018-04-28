@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@drawable/shape_wight"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:text="修改设备名称"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/name"
+            android:hint="name"
+            android:text=""
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="取消"
+                android:textColor="@color/blue"
+                android:gravity="center"
+                android:layout_height="match_parent" />
+            <View
+                android:layout_width="1px"
+                android:background="@color/c999"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/sure"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="确定"
+                android:textColor="@color/blue"
+                android:gravity="center"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

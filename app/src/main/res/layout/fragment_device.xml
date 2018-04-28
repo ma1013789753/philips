@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    android:background="@color/loginblue"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="180dp">
+        <View
+            android:layout_alignParentRight="true"
+            android:layout_width="200dp"
+            android:background="@drawable/zhujiemian_chatu2x"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:id="@+id/title"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Philips POC"
+                android:padding="15dp"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/add_device"
+                android:padding="15dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/add" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_below="@id/title"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:text="9"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:textColor="@color/white"
+                    android:textSize="60dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:text="℃"
+                    android:padding="0dp"
+                    android:textColor="@color/white"
+                    android:textSize="24dp"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <View
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="2dp"
+                        android:background="@color/white"
+                        android:layout_height="60dp"></View>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:text="PM2.5 55"
+                        android:textSize="15dp"
+                        android:textColor="@color/white"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="15dp"
+                        android:gravity="center_vertical"
+                        android:text="Cloudy"
+                        android:textColor="@color/white"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/no_device"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_wight"
+            android:layout_height="77dp">
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:background="@drawable/device"
+                android:layout_height="40dp" />
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:text="No Devices"
+                    android:textSize="15dp"
+                    android:textColor="#515151"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="14dp"
+                    android:gravity="center_vertical"
+                    android:text="Add Device"
+                    android:textColor="@color/c999"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/no_login"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_wight"
+            android:layout_height="77dp">
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_width="37dp"
+                android:background="@drawable/me_head3x"
+                android:layout_height="37dp" />
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:text="Login"
+                    android:textSize="15dp"
+                    android:textColor="#515151"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="14dp"
+                    android:gravity="center_vertical"
+                    android:text="Please Login First"
+                    android:textColor="@color/c999"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</com.zhy.autolayout.AutoLinearLayout>

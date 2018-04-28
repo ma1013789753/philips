@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#888888"
+             android:fitsSystemWindows="true">
+
+
+    <FrameLayout
+        android:id="@+id/fl_my_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="380dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/EEEEEE"
+        android:textSize="14sp"
+        android:text="@string/AddDevice_Prompt_Text"/>
+
+    <TextView
+        android:id="@+id/tv_to_next"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="440dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/scan_code_tv"
+        android:textSize="16sp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="@string/AddDevice_Button_ChooseModel"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <include
+            android:id="@+id/action_bar"
+            layout="@layout/actionbar_back"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

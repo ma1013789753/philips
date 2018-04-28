@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+    </FrameLayout>
+
+   <LinearLayout
+       android:background="#fcfcfc"
+       android:layout_width="match_parent"
+       android:layout_height="60dp">
+       <RadioGroup
+           android:id="@+id/rootgroup"
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:gravity="center"
+           android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/group1"
+                android:paddingTop="10dp"
+                android:drawablePadding="1dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="Devices"
+                android:checked="true"
+                android:textColor="@color/blue"
+                android:drawableTop="@drawable/deviceselect"
+                android:button="@null"
+                android:layout_height="match_parent">
+            </RadioButton>
+           <RadioButton
+               android:id="@+id/group2"
+               android:paddingTop="10dp"
+               android:drawablePadding="1dp"
+               android:layout_width="match_parent"
+               android:layout_weight="1"
+               android:text="Me"
+               android:checked="false"
+               android:textColor="@color/c999"
+               android:gravity="center"
+               android:drawableTop="@drawable/mineselect"
+               android:button="@null"
+               android:layout_height="match_parent">
+
+           </RadioButton>
+       </RadioGroup>
+
+   </LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

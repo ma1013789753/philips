@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@color/loginblue"
+        android:layout_height="200dp">
+        <ImageView
+            android:layout_margin="30dp"
+            android:layout_width="80dp"
+            android:src="@drawable/me_head3x"
+            android:layout_height="80dp" />
+        <LinearLayout
+            android:id="@+id/userlogin"
+            android:visibility="visible"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                android:text="Regist/Login"
+                android:background="@drawable/shape_wight"
+                android:layout_width="120dp"
+                android:layout_height="36dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/userinfo"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:visibility="gone"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:text="恭喜先生有喜啦"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/username"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/myaccount"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:src="@drawable/maccount2x"
+                android:layout_height="25dp" />
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:text="My Account"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/marrow2x"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="50dp"
+            android:background="@color/c999"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+        <LinearLayout
+            android:id="@+id/mydevice"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:src="@drawable/mdevice2x"
+                android:layout_height="25dp" />
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:text="My Devices"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/marrow2x"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:background="@color/c999"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+    </LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

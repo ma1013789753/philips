@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+        <ImageView
+            android:id="@+id/backbar"
+            android:layout_width="100px"
+            android:src="@drawable/lefticon_black"
+            android:padding="30px"
+            android:layout_height="100px" />
+
+        <TextView
+            android:id="@+id/titlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="My account"
+            android:textColor="@color/black"
+            android:textSize="32px" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/c999"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:id="@+id/myname"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:src="@drawable/maccount2x"
+            android:layout_height="25dp" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:text="Nick Name"
+
+            android:textSize="14dp"
+            android:textColor="#333333"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Eleven"
+            android:textSize="14dp"
+            android:textColor="#666666"
+            android:paddingRight="10dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/marrow2x"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="50dp"
+        android:background="@color/c999"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:id="@+id/myphone"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:src="@drawable/phonenumber2x"
+            android:layout_height="25dp" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:text="Phone Number"
+            android:textSize="14dp"
+            android:textColor="#333333"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="155******126"
+            android:textSize="14dp"
+            android:textColor="#666666"
+            android:paddingRight="10dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/marrow2x"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="50dp"
+        android:background="@color/c999"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:id="@+id/mypwd"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:src="@drawable/password2x"
+            android:layout_height="25dp" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:text="Modify password"
+            android:textSize="14dp"
+            android:textColor="#333333"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/marrow2x"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="@color/c999"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:layout_marginTop="150dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/loginout"
+            android:textSize="17dp"
+            android:layout_width="260dp"
+            android:text="Login Out"
+            android:background="@drawable/radio_blue"
+            android:textColor="@color/loginblue"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

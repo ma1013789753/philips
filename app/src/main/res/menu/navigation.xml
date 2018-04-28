@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/switch_select"
+        android:title="开关" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/his_select"
+        android:title="历史数据" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/lvx_select"
+        android:title="滤芯" />
+
+</menu>

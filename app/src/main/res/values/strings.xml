@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">philips</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="SelectClassify_Header_Title">Select classify</string>
+    <string name="SelectModel_Header_Title">Select Model</string>
+    <string name="ActivateNetworking_Header_Title">How to enter the internet</string>
+    <string name="NetConnecting_Header_Title">Connecting</string>
+    <string name="NetConnecting_Toast_DeviceTypeError">Device type error</string>
+    <string name="AddDevice_Header_Title">Add device</string>
+    <string name="AddDevice_Toast_NotSpecifyCode">This QR code is not for Ec APP, please confirm the QR code is correct</string>
+    <string name="AddDevice_Prompt_Text">Please put the product QR code in the identification box</string>
+    <string name="AddDevice_Button_ChooseModel">Distribution</string>
+    <string name="AddDeviceSuccess_Header_Title">Add device</string>
+    <string name="AddDeviceSuccess_Prompt_CanUse">Network configuration successful, you can start using it!</string>
+    <string name="AddDeviceSuccess_Placeholder_Text">Name it</string>
+    <string name="AddDeviceSuccess_Button_Title">Done</string>
+    <string name="AddDeviceSuccess_Toast_ChangeError">Device name set error</string>
+
+    <string name="AddDeviceFail_Header_Title">Failed to add device</string>
+    <string name="AddDeviceFail_List_AddFail">Add failed</string>
+    <string name="AddDeviceFail_List_CheckStep">Follow these steps to troubleshoot the problem</string>
+    <string name="AddDeviceFail_List_Networking">Make sure your device is in network configuration mode</string>
+    <string name="AddDeviceFail_List_PwdError">Make sure you enter the correct Wi-Fi password</string>
+    <string name="AddDeviceFail_List_2.4GHz">Make sure that the wireless router the phone is connected to is a 2.4GHz network</string>
+    <string name="AddDeviceFail_List_MacFilter">Make sure that the wireless router has turned off the black list (MAC address filtering) function</string>
+    <string name="AddDeviceFail_List_AdvancedSetting">Try to modify the advanced settings of the wireless router to 11bg or 20MHz bandwidth. After the network configuration is successful, reset the router to its original configuration.</string>
+    <string name="AddDeviceFail_List_CallUs">If you are still unable to config the network, please call our after-sales service</string>
+    <string name="AddDeviceFail_List_Retry">Try again</string>
+    <string name="ActivateNetworking_Button_Title">Next</string>
+    <string name="NetConnecting_Prompt_CloseToWiFi">Please ensure that your device, router, and mobile phone are as close as possible</string>
+    <string name="ConnectionInfo_Header_Title">Set home Wi-Fi name</string>
+    <string name="ConnectionInfo_Button_ChangeWifi">Change home Wi-Fi name</string>
+    <string name="ConnectionInfo_placeholder_NotSetWifi">Please connect Wi-Fi</string>
+    <string name="ConnectionInfo_placeholder_WifiPwd">Password</string>
+    <string name="DeviceBindDenied_Prompt_NoPermission">There is no authority to config device net work</string>
+    <string name="DeviceBindDenied_Prompt_CallAdmin">Please contact the device owner to share or unbind the device</string>
+    <string name="DeviceBindDenied_Cell_Admin">Owner</string>
+    <string name="DeviceBindDenied_Cell_DeviceName">Device name</string>
+    <string name="add_not_link_wifi">You have not yet connected to Wi-Fi</string>
+</resources>

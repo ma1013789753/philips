@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/deeplilac"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px">
+            <ImageView
+                android:id="@+id/backbar"
+                android:layout_width="100px"
+                android:src="@drawable/lefticon_white"
+                android:padding="30px"
+                android:layout_height="100px" />
+            <TextView
+                android:id="@+id/titlebar"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:text="Device Detail"
+                android:gravity="center"
+                android:textSize="32px"
+                android:textColor="@color/white"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="-80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_wight"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <ImageView
+            android:layout_margin="20dp"
+            android:layout_width="58dp"
+            android:background="@drawable/device"
+            android:layout_height="58dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/d_name"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:text="B0F893166D28"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/d_time"
+                android:layout_width="wrap_content"
+                android:text="Joind Time：2017-01-02"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:background="@color/c999"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/sharelay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="Device sharing"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/qrcode" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/marrow2x" />
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="50dp"
+        android:background="@color/c999"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:id="@+id/userlay"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="User list"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/usercount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/marrow2x"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="@color/c999"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <View
+        android:layout_marginTop="10dp"
+        android:background="@color/c999"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:id="@+id/devicelay"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:text="Modify the name"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/devicename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/marrow2x"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="50dp"
+        android:background="@color/c999"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:id="@+id/idlay"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:text="DeviceID"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/deviceid"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:text="23123"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="50dp"
+        android:background="@color/c999"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:id="@+id/gujianlay"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="Firmware update"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+        <TextView
+            android:id="@+id/gujian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/marrow2x"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="@color/c999"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/unbind"
+            android:layout_width="200dp"
+            android:text="Unbind"
+            android:textColor="@color/blue"
+            android:background="@drawable/shape_wight"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

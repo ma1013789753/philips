@@ -1,0 +1,43 @@
+Index: app/src/main/java/com/gaoda/philips/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/gaoda/philips/MainActivity.java	(revision 5876654d8295e9df91727737d8d0995a7405879a)
++++ app/src/main/java/com/gaoda/philips/MainActivity.java	(date 1524816538600)
+@@ -322,7 +322,7 @@
+             LinearLayout linearLayout = (LinearLayout) fouthButton.getChildAt(i);
+             final CheckBox box = (CheckBox) linearLayout.getChildAt(0);
+             final TextView text = (TextView) linearLayout.getChildAt(1);
+-            final int a = i+1;
++            final int a = i;
+             linearLayout.setOnClickListener(v -> {
+                 if (box.isChecked()) {
+                     return;
+@@ -331,7 +331,7 @@
+                     return;
+                 }
+                 client.sendMessege("{\"WorkMode\":\"" + a + "\"}");
+-                if (a == 1) {
++                if (a == 0) {
+                     stagebutton.setEnable(false);
+                 } else {
+                     stagebutton.setEnable(true);
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build.gradle	(revision 5876654d8295e9df91727737d8d0995a7405879a)
++++ app/build.gradle	(date 1524816711097)
+@@ -6,8 +6,8 @@
+         applicationId "com.gaoda.philips"
+         minSdkVersion 19
+         targetSdkVersion 27
+-        versionCode 4
+-        versionName "2.3"
++        versionCode 5
++        versionName "3.0"
+         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+ //        jackOptions{
+ //            enabled = true
